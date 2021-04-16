@@ -1,0 +1,90 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style02.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <script type="text/javascript" src="cal.js"></script>
+    <title>AI Recognition</title>
+    <div id=FullscreenButton onclick="EnterFullscreen()" style="
+    background-color:black transparent;background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:rgb(255, 255, 255)">AI Recognition</div>
+    <!-- <button onclick="ExitFullscreen()">Exit</button> -->
+  </head>
+
+  <body>
+    <script>
+      // var simulateClick = function (elem) {
+      //   // Create our event (with options)
+      //   var evt = new MouseEvent('click', {
+      //     bubbles: true,
+      //     cancelable: true,
+      //     view: window
+      //   });
+      //   // If cancelled, don't dispatch our event
+      //   var canceled = !elem.dispatchEvent(evt);
+      // };
+      // // var someLink = document.querySelector('a');
+      // var someLink = document.getElementById("FullscreenButton");
+      // simulateClick(someLink);
+
+      function EnterFullscreen() {
+        document.documentElement.requestFullscreen();
+      }
+
+      function ExitFullscreen() {
+        document.exitFullscreen();
+      }
+    </script>
+    <div class="out">
+      <div id="webcam-container"></div>
+
+      <div class="title" id="label_container">AI Recognition</div>
+      <div class="title" id="label_container2"></div>
+    </div>
+
+    <!-- 音檔 -->
+    <audio id="aivoice12">
+      <source src="media/ian-tshiang.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="aivoice13">
+      <source src="media/bí-tn̂g.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="aivoice14">
+      <source src="media/tāu-kuann.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="aivoice15">
+      <source src="media/oo-lián.mp3" type="audio/mp3">
+    </audio>
+
+
+    <audio id="aivoice16">
+      <source src="media/bí-hueh.mp3" type="audio/mp3">
+    </audio>
+
+
+    <!-- 聲音js -->
+
+
+
+  </body>
+
+  </html>
